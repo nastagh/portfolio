@@ -17,6 +17,11 @@
             font-size: 24px;
         }
     }
+
+    @include media-min-phone{
+        padding: 0 $paddingMedia;
+        padding-bottom: $paddingMedia;
+    }
 }
 
 .projects_item_container {

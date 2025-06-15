@@ -7,9 +7,11 @@ $highliteSection:#f1eae0;
 
 $borderRadius: 15px;
 $paddingRight: 50px;
+$paddingMedia:25px;
 
 $tableWidth: 740px;
 $phoneWidth: 412px;
+$phoneMinWidth: 340px;
 
 @mixin media-tablet {
     @media only all and (max-width: $tableWidth)
@@ -20,6 +22,13 @@ $phoneWidth: 412px;
 
 @mixin media-phone {
     @media only all and (max-width: $phoneWidth)
+    {
+        @content;
+    }
+}
+
+@mixin media-min-phone {
+    @media only all and (max-width: $phoneMinWidth)
     {
         @content;
     }

@@ -11,6 +11,11 @@
     width: 100%;
     z-index: 100;
     font-family: 'Inter', sans-serif;
+
+    @include media-min-phone {
+        padding: 30px 10px;
+        justify-content: center;
+    }
 }
 
 .link_navigate {

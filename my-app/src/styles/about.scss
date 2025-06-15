@@ -23,6 +23,10 @@
     @include media-tablet {
         flex-direction: column;
     }
+
+    @include media-min-phone {
+        padding: $paddingMedia;
+    }
 }
 
 .about_text {
