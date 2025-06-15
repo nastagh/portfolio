@@ -1,0 +1,30 @@
+@import 'constants';
+
+.header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: $textColor;
+    background-color: $lightBackground;
+    padding: 30px 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    font-family: 'Inter', sans-serif;
+}
+
+.link_navigate {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.links {
+    text-decoration: none;
+    color: $textColor;
+    &:hover {
+        font-weight: bold;
+    }
+}
+

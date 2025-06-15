@@ -1,0 +1,26 @@
+$lightBackground: #fdf9f0;
+$textColor: #3E3A36;
+$accentElement: #AFA99C;
+$projectSection: #eadec5;
+$highliteSection:#f1eae0;
+
+
+$borderRadius: 15px;
+$paddingRight: 50px;
+
+$tableWidth: 740px;
+$phoneWidth: 412px;
+
+@mixin media-tablet {
+    @media only all and (max-width: $tableWidth)
+    {
+        @content;
+    }
+}
+
+@mixin media-phone {
+    @media only all and (max-width: $phoneWidth)
+    {
+        @content;
+    }
+}

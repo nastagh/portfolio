@@ -1,0 +1,14 @@
+@import 'constants';
+
+.separator {
+    width: 100%;
+    background-color: $lightBackground;
+    padding: 0 $paddingRight;
+
+    hr {
+        color: $highliteSection;
+        border-width: 0;
+        height: 2px;
+        background-color: $highliteSection;
+    }
+}
