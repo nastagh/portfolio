@@ -8,7 +8,7 @@ const Intro: React.FC = () => {
     return (
         <div className="intro" id={`${SectionButton.Home}`}>
             <div className="intro_foto_contact_container">
-                <img src="/assets/IMG_5776.jpg" alt="foto" className="intro_foto"/>
+                <img src={`${process.env.PUBLIC_URL}/assets/IMG_5776.jpg`} alt="foto" className="intro_foto"/>
                 <div className="intro_contact_container">
                     {ContactInfo.map(item => (
                         <LinkItem link={item.link} img={item.img} alt={item.alt}/>
