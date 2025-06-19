@@ -12,10 +12,10 @@ const Projects: React.FC = () => {
             </h3>
             <div className="projects_item_container">
                 {ArrayProject.map(item => (
-                    <ProjectItem link={item.link} name={item.name} img={item.img} description={item.description} />
+                        <ProjectItem link={item.link} name={item.name} img={item.img} description={item.description} />
                 ))}
             </div>
-        </div>
+        </div >
     )
 }
 

@@ -6,8 +6,11 @@
     align-items: center;
     color: $textColor;
     background-color: $lightBackground;
-    padding: 30px 50px;
+    padding: 25px 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: top 0.3s ease, box-shadow 0.3s ease;
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 100;
     font-family: 'Inter', sans-serif;
@@ -15,6 +18,14 @@
     @include media-min-phone {
         padding: 30px 10px;
         justify-content: center;
+    }
+
+    &.hide {
+        top: -100px;
+    }
+
+    &.show {
+        top: 0;
     }
 }
 
@@ -28,8 +39,8 @@
 .links {
     text-decoration: none;
     color: $textColor;
+
     &:hover {
         font-weight: bold;
     }
 }
-
